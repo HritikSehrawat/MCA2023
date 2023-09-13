@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<script>
-var jsonobject={"name":"Hritik Sehrawat","age":22}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var jsonobj=[{"name":"Chaudhary",
+                       "age":"22",
+                      "gender":"M"},
 
-document.write(jsonobject.name+"--"+jsonobject.age+"</br>");
-jsonobject.age=22;
-document.write(jsonobject.name+"--"+jsonobject.age+"</br>");
-</script>
-<style>
-body { background-color:powderblue;}
-</style>
+                    {"name":"Hritik",
+                     "age":"24",
+                     "gender":"M"},
+                    
+                    {"name":"Sehrawat",
+                      "age":"26",
+                     "gender":"M"}];
+
+            for(var i=0;i<jsonobj.length;i++){
+                document.write(jsonobj[i].name+"--");
+                document.write(jsonobj[i].age+"--");
+                document.write(jsonobj[i].gender+"</br>");
+            }
+        
+        </script>
 </head>
-<body  >
+<body>
+   
 </body>
 </html>
